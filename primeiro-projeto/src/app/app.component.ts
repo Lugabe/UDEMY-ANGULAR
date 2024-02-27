@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NewComponent } from '../components/new-component/new-component.component';
+import { NewComponentComponent } from './components/new-components/new-component/new-component.component';
+import { TemplateBidingComponent } from './components/new-components/template/template-biding/template-biding/template-biding.component';
 
 
 @Component({
@@ -11,10 +12,10 @@ import { NewComponent } from '../components/new-component/new-component.componen
 
   <h1>Olá Angular</h1>
 
-  <app-new-component></app-new-component>
+  <app-template-biding></app-template-biding>
   <router-outlet></router-outlet>
   `,
-    imports: [RouterOutlet, CommonModule, NewComponent]
+    imports: [RouterOutlet, CommonModule, NewComponentComponent,TemplateBidingComponent]
 })
 export class AppComponent {
 }
